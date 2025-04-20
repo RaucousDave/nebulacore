@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet"
+      />
+
+      <!-- Tailwind CSS CDN -->
+      <link rel="stylesheet" href="./dist/output.css" />
+      <link rel="stylesheet" href="./style/style.css" />
+      <title>NEBULACORE</title>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      />
+    </head>
+  </head>
+  <body>
+    <nav class="bg-slate-900 text-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0 text-2xl font-heading text-indigo-500">
+            NEBULACORE
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-6 font-body">
+            <a href="index.html" class="hover:text-indigo-400 transition"
+              >Home</a
+            >
+            <a href="about.html" class="hover:text-indigo-400 transition"
+              >About</a
+            >
+            <a href="services.html" class="hover:text-indigo-400 transition"
+              >Services</a
+            >
+            <a href="contact.html" class="hover:text-indigo-400 transition"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-btn"
+              class="text-slate-100 hover:text-indigo-400 focus:outline-none"
+            >
+              <!-- Hamburger Icon -->
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden font-body space-y-[15px]">
+        <div class="flex justify-end w-[30px] h-[30px] mb-[5rem]">
+          <svg width="40" height="40" viewBox="0 0 40 40" id="close-icon">
+            <path
+              d="M 10,10 L 30,30 M 30,10 L 10,30"
+              stroke="white"
+              stroke-width="4"
+            />
+          </svg>
+        </div>
+        <a href="index.html" class="block text-slate-300 hover:text-indigo-400"
+          >Home</a
+        >
+        <a href="about.html" class="block text-slate-300 hover:text-indigo-400"
+          >About</a
+        >
+        <a
+          href="services.html"
+          class="block text-slate-300 hover:text-indigo-400"
+          >Services</a
+        >
+        <a
+          href="contact.html"
+          class="block text-slate-300 hover:text-indigo-400"
+          >Contact</a
+        >
+      </div>
+    </nav>
+    <!-- About Hero Section -->
+    <section
+      class="bg-slate-950 text-white py-24 px-6 relative overflow-hidden h-[90vh] flex flex-col items-center justify-center"
+    >
+      <div class="max-w-4xl mx-auto text-center z-10 relative">
+        <h1 class="text-4xl md:text-5xl font-heading mb-6">
+          WE DON'T JUST CODE WEBSITES-
+          <span
+            class="bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500 text-transparent bg-clip-text"
+            >WE ENGINEER EXPERIENCES</span
+          >
+        </h1>
+        <p class="text-slate-400 text-lg max-w-xl mx-auto font-body">
+          At Nebulacore, we create seamless digital ecosystems that push your
+          brand beyond the screen.
+        </p>
+      </div>
+
+      <!-- Ambient Icons (Floating style) -->
+      <div class="absolute top-10 left-10 text-indigo-500 opacity-20 text-6xl">
+        <i class="fas fa-meteor"></i>
+      </div>
+      <div
+        class="absolute bottom-10 right-10 text-pink-400 opacity-20 text-6xl"
+      >
+        <i class="fas fa-satellite-dish"></i>
+      </div>
+    </section>
+    <section
+      class="relative bg-gradient-to-br from-slate-950 to-slate-900 text-white py-24 px-4 overflow-hidden"
+    >
+      <div
+        class="absolute -top-10 -left-10 w-[300px] h-[300px] bg-indigo-500 blur-3xl opacity-20 rounded-full"
+      ></div>
+      <div
+        class="absolute bottom-0 right-0 w-[300px] h-[300px] bg-pink-500 blur-3xl opacity-20 rounded-full"
+      ></div>
+
+      <div class="max-w-5xl mx-auto text-center">
+        <div
+          class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-10 relative z-10 shadow-2xl hover:shadow-pink-500/20 transition-all duration-300"
+        >
+          <h2 class="text-3xl md:text-4xl font-heading mb-6">
+            What Powers <span class="text-indigo-400">Nebulacore</span>
+          </h2>
+          <p class="text-slate-300 max-w-3xl mx-auto mb-8 text-lg">
+            Underneath every project is the Nebulacore Engine—a set of
+            principles that fuses creativity with code. It’s fast, modular, and
+            dangerously efficient.
+          </p>
+
+          <ul
+            class="grid md:grid-cols-3 gap-6 text-left text-sm text-slate-400 [&>li]:bg-slate-800/60 [&>li]:p-4 [&>li]:rounded-xl [&>li]:backdrop-blur-sm [&>li]:border [&>li]:border-white/5"
+          >
+            <li
+              class="hover:shadow-indigo-400 hover:shadow-lg transition-all duration-200 ease-in"
+            >
+              <i class="fas fa-code text-indigo-400 mr-2"></i> Clean, scalable
+              architecture
+            </li>
+            <li
+              class="hover:shadow-lg transition-all duration-200 ease-in hover:shadow-pink-400"
+            >
+              <i class="fas fa-paint-brush text-pink-400 mr-2"></i> Sleek &
+              minimal design system
+            </li>
+            <li
+              class="hover:shadow-yellow-400 hover:shadow-lg transition-all duration-200 ease-in"
+            >
+              <i class="fas fa-bolt text-yellow-400 mr-2"></i>
+              Performance-obsessed delivery
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="bg-slate-950 py-24 px-4 text-white">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2
+          class="text-3xl md:text-4xl font-heading mb-12 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-slate-500"
+        >
+          THE CORE TEAM
+        </h2>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- Profile Card -->
+          <div
+            class="bg-slate-900/60 p-6 rounded-xl border border-white/10 backdrop-blur-md hover:shadow-indigo-500/20 transition-all duration-300"
+          >
+            <div class="text-indigo-400 text-4xl mb-4">
+              <i class="fas fa-terminal"></i>
+            </div>
+            <h3 class="font-heading text-xl mb-2">Davies Enienghan</h3>
+            <p class="text-slate-400 text-sm">
+              Lead Frontend Dev / UI Alchemist
+            </p>
+          </div>
+
+          <div
+            class="bg-slate-900/60 p-6 rounded-xl border border-white/10 backdrop-blur-md hover:shadow-pink-500/20 transition-all duration-300"
+          >
+            <div class="text-pink-400 text-4xl mb-4">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3 class="font-heading text-xl mb-2">Amara Codes</h3>
+            <p class="text-slate-400 text-sm">
+              Creative Director / UX Strategist
+            </p>
+          </div>
+
+          <div
+            class="bg-slate-900/60 p-6 rounded-xl border border-white/10 backdrop-blur-md hover:shadow-yellow-400/20 transition-all duration-300"
+          >
+            <div class="text-yellow-400 text-4xl mb-4">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h3 class="font-heading text-xl mb-2">Jide Sparks</h3>
+            <p class="text-slate-400 text-sm">Backend Engineer / API Wizard</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-gradient-to-br from-slate-950 to-black py-24 px-4 text-white relative overflow-hidden"
+    >
+      <div class="max-w-3xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-heading text-center mb-16 text-indigo-400"
+        >
+          Nebula Pulse
+        </h2>
+
+        <div class="relative border-l border-indigo-500 pl-6 space-y-16">
+          <!-- Item 1 -->
+          <div class="group relative">
+            <div
+              class="absolute -left-[15px] top-0 w-6 h-6 bg-indigo-500 rounded-full shadow-md animate-pulse"
+            ></div>
+            <div
+              class="bg-white/5 p-6 rounded-lg backdrop-blur-sm border border-white/10 transition-all duration-300 group-hover:scale-[1.02]"
+            >
+              <div class="flex items-center gap-4 mb-2">
+                <i class="fas fa-rocket text-indigo-400 text-xl"></i>
+                <h3 class="font-heading text-lg">Launch Initiated</h3>
+              </div>
+              <p class="text-slate-400 text-sm">
+                Nebulacore was born in the fire of raw ambition and
+                caffeine-fueled code jams.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="group relative">
+            <div
+              class="absolute -left-[15px] top-0 w-6 h-6 bg-pink-500 rounded-full shadow-md animate-pulse"
+            ></div>
+            <div
+              class="bg-white/5 p-6 rounded-lg backdrop-blur-sm border border-white/10 transition-all duration-300 group-hover:scale-[1.02]"
+            >
+              <div class="flex items-center gap-4 mb-2">
+                <i class="fas fa-laptop-code text-pink-400 text-xl"></i>
+                <h3 class="font-heading text-lg">System Upgrade</h3>
+              </div>
+              <p class="text-slate-400 text-sm">
+                We mastered modular design, responsive layouts, and aesthetic
+                minimalism.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="group relative">
+            <div
+              class="absolute -left-[15px] top-0 w-6 h-6 bg-yellow-400 rounded-full shadow-md animate-pulse"
+            ></div>
+            <div
+              class="bg-white/5 p-6 rounded-lg backdrop-blur-sm border border-white/10 transition-all duration-300 group-hover:scale-[1.02]"
+            >
+              <div class="flex items-center gap-4 mb-2">
+                <i class="fas fa-server text-yellow-400 text-xl"></i>
+                <h3 class="font-heading text-lg">Backend Awakening</h3>
+              </div>
+              <p class="text-slate-400 text-sm">
+                With backend knowledge acquired, we connected the frontend
+                galaxy to its core.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-slate-950 py-8 px-4 text-slate-300">
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="flex justify-center space-x-6 mb-6">
+          <!-- Social Media Icons -->
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            class="text-2xl hover:text-indigo-500 transition duration-300"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            class="text-2xl hover:text-indigo-500 transition duration-300"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            class="text-2xl hover:text-indigo-500 transition duration-300"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            class="text-2xl hover:text-indigo-500 transition duration-300"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+
+        <div class="flex justify-center space-x-8 mb-6">
+          <!-- Footer Links -->
+          <a href="/privacy" class="hover:text-indigo-400">Privacy Policy</a>
+          <a href="/terms" class="hover:text-indigo-400">Terms & Conditions</a>
+          <a href="/contact" class="hover:text-indigo-400">Contact</a>
+        </div>
+
+        <div class="text-center text-sm">
+          <!-- Copyright Info -->
+          <p>&copy; 2025 Nebulacore. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

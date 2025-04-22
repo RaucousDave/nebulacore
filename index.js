@@ -1,12 +1,13 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const hamburger = document.getElementById("mobile-menu-btn");
-  const menu = document.getElementById("mobile-menu");
-  const close = document.getElementById("close-icon");
+const menu = document.getElementById("mobile-menu");
+const openBtn = document.getElementById("mobile-menu-btn");
+const closeBtn = document.getElementById("close-icon");
 
-  hamburger.addEventListener("click", () => {
-    menu.classList.remove("hidden");
-  });
-  close.addEventListener("click", () => {
-    menu.classList.add("hidden");
-  });
+openBtn.addEventListener("click", () => {
+  menu.classList.remove("translate-x-full");
+  menu.classList.add("translate-x-0");
+});
+
+closeBtn.addEventListener("click", () => {
+  menu.classList.remove("translate-x-0");
+  menu.classList.add("translate-x-full");
 });
